@@ -85,7 +85,9 @@ textarea {
     padding-bottom: 120px;
    
 }
-
+.section-img {
+    padding-bottom: 120px;
+}
 
 .link {
     text-decoration: none;
@@ -94,7 +96,7 @@ textarea {
     list-style: none;
     display: flex;
         flex-wrap: wrap;
-        gap: var(--indent);
+        
 }
 
 
@@ -103,7 +105,8 @@ textarea {
 
 .card-set {
     display: flex;
-
+    flex-wrap: wrap;
+    gap: var(--indent);
 }
    
 
