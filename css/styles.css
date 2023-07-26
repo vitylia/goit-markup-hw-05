@@ -629,6 +629,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 50%;
 
     transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    fill: var(--cloud-color);
 }
 .icon-bgr:hover,
 .icon-bgr:focus {
@@ -703,6 +704,9 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .send-svg {
     margin-left: 16px;
     color: var(--white-color);
+    fill: var(--cloud-color);
+   
+
 }
 .footer-button:hover,
 .footer-button:focus {
@@ -848,16 +852,21 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: transparent;
 
     transition: border-color var(--transition-duration) var(--timing-function);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #4D5AE5;
 }
 
-.form-input:hover,
+
+
 .form-input:focus {
     border-color: var(--iris-color);
     
 }
 
+
+
 .form-input:focus {
-    border-color: var(--iris-color);
+    border-color: #2E2;
     fill: #4D5AE5;
 }
 
