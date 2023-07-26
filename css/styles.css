@@ -888,19 +888,8 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: #4D5AE5;
 }
 
-.icon-position:focus {
-  
-    border:none; 
 
-    fill: #4D5AE5;
-}
 
-.icon-position-input:focus {
-  
-    border:none; 
-
-    fill: #4D5AE5;
-}
 
     .form-icon {
         position: absolute;
@@ -915,12 +904,8 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
     }
 
-    .form-icon-imput:focus
-    {
+    .form-icon-imput:focus {
         fill: #4D5AE5;
-    
-        
-    
     
     }
 
