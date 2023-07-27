@@ -833,7 +833,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .modal-label {
     display: block;
     margin-bottom: 4px;
-  
     color: #8e8f99;
     font-family: Roboto;
     font-style: normal;
@@ -985,10 +984,27 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border var(--transition-duration) var(--timing-function), 
     fill var(--transition-duration) var(--timing-function);
 }
-.checkbox:checked + .label-checkbox>.checkbox-svg {
+.checkbox:checked + .label-checkbox.checkbox-svg {
     fill: var(--cloud-color);
     background-color: var(--ocean-color);
     border: none; 
+}
+
+.form-label {
+    color:#8E8F99;
+    font-size: 12px; 
+    line-height: 1.17;
+    letter-spacing: 0.04em; 
+       
+
+} 
+
+.label-checkbox {
+color:#8E8F99;
+font-size: 12px; 
+line-height: 1.17;
+letter-spacing: 0.04em; 
+   
 }
 .privacy-link {
     color: var(--brand-color);
