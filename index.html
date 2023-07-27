@@ -449,84 +449,71 @@
 
      <!-- Вікно після кнопки ODER SERVISE MODAL -->
      
-    <div class="backdrop is-hidden" data-modal>
+     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button
-          type="button"
-          class="modal-button"
-          data-modal-close
-          aria-label="Close modal window button"
-        >
-          <svg class="modal-icon" width="8" height="8">
+        <button type="button" class="close-button" data-modal-close>
+          <svg class="modal-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-closer"></use>
           </svg>
         </button>
-
-
-        <!-- Modal form -->
-        <p class="modal-caption section-subtitle">
+        <p class="modal-header">
           Leave your contacts and we will call you back
         </p>
-        <form class="modal-form" name="register_form">
-          <div class="input-container">
-            <label for="user-name" class="modal-label">Name</label>
-            <div class="modal-form-field">
+        <form class="form">
+          <div class="form-group">
+            <label for="user-name" class="form-label">Name</label>
+            <div class="icon-position">
               <input
+                name="user-name"
                 id="user-name"
                 type="text"
-                class="modal-input"
-                name="user-name"
+                class="form-input"
                 required
               />
-              <svg class="register-modal-icon" width="18" height="24">
+              <svg class="form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
-
-          <div class="input-container">
-            <label for="phone" class="modal-label">Phone</label>
-            <div class="modal-form-field">
+          <div class="form-group">
+            <label for="tel" class="form-label">Phone</label>
+            <div class="icon-position">
               <input
-                id="phone"
-                type="tel"
-                class="modal-input"
                 name="phone"
+                id="tel"
+                type="number"
+                class="form-input"
                 required
               />
-              <svg class="register-modal-icon" width="18" height="24">
+              <svg class="form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
-
-          <div class="input-container">
-            <label for="email" class="modal-label">Email</label>
-            <div class="modal-form-field">
+          <div class="form-group">
+            <label for="mail" class="form-label">Email</label>
+            <div class="icon-position">
               <input
-                id="email"
+                name="mail"
+                id="mail"
                 type="email"
-                class="modal-input"
-                name="email"
+                class="form-input"
                 required
               />
-              <svg class="register-modal-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-email"></use>
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email""></use>
               </svg>
             </div>
           </div>
-
-          <div class="input-container comment-wrapper">
-            <label for="user-comment" class="modal-label">Comment</label>
+          <div class="form-group coments-group">
+            <label for="user-comment" class="form-label">Comment</label>
             <textarea
-              id="user-comment"
+              class="coments"
               name="user-comment"
-              class="modal-input modal-comment"
+              id="user-comment"
               placeholder="Text input"
-            >
-            </textarea>
+            ></textarea>
           </div>
-
           <div class="form-checkbox">
             <input
               type="checkbox"
@@ -541,9 +528,7 @@
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
-
-
-             I accept the terms and conditions of the
+              I accept the terms and conditions of the
               <a href="" class="privacy-link">Privacy Policy</a>
             </label>
           </div>
